@@ -3,10 +3,10 @@ package com.projeto.simples;
 public abstract class Eletros {
     private String nome, cor, marca, modelo, disjuntor;
     private int tensao;
-    private double preco, fio, kwhMes;
+    private double preco, fio;
 
     public Eletros(String nome, String cor, String marca, String modelo, String disjuntor, int tensao, double preco,
-            double fio, double kwhMes) {
+            double fio) {
         this.nome = nome;
         this.cor = cor;
         this.marca = marca;
@@ -15,7 +15,6 @@ public abstract class Eletros {
         this.tensao = tensao;
         this.preco = preco;
         this.fio = fio;
-        this.kwhMes = kwhMes;
     }
     //setters
     public void setCor(String cor) {
@@ -26,9 +25,6 @@ public abstract class Eletros {
     }
     public void setFio(double fio) {
         this.fio = fio;
-    }
-    public void setKwhMes(double kwhMes) {
-        this.kwhMes = kwhMes;
     }
     public void setMarca(String marca) {
         this.marca = marca;
@@ -56,9 +52,6 @@ public abstract class Eletros {
     }
     public double getFio() {
         return fio;
-    }
-    public double getKwhMes() {
-        return kwhMes;
     }
     public String getMarca() {
         return marca;

@@ -10,8 +10,8 @@ public class ArCondicionado extends Eletros implements IEletros {
     
 
     public ArCondicionado(String nome, String cor, String marca, String modelo, String disjuntor, int tensao,
-            double preco, double fio, double kwhMes, int refrigeracao) {
-        super(nome, cor, marca, modelo, disjuntor, tensao, preco, fio, kwhMes);
+            double preco, double fio, int refrigeracao) {
+        super(nome, cor, marca, modelo, disjuntor, tensao, preco, fio);
         this.refrigeracao = refrigeracao;
     }
 
@@ -27,7 +27,7 @@ public class ArCondicionado extends Eletros implements IEletros {
         System.out.println("Nome: "+ getNome() + ", cor: " + getCor() + ", marca: " 
                             + getMarca() +"\n"+ "modelo: " + getModelo() + ", Disjuntor " + getDisjuntor()
                             + ", tensao: " +getTensao() +"\n"+  "preco: " + getPreco() +  ", fio " + getFio() 
-                            + ", gasto por mes " + getKwhMes()+ "Refrigeracao: " + getRefrigeracao() );
+                            + "Refrigeracao: " + getRefrigeracao() );
     }
     
 }

@@ -5,8 +5,8 @@ public class Chuveiro extends Eletros implements IEletros{
 
     
     public Chuveiro(String nome, String cor, String marca, String modelo, String disjuntor, int tensao, double preco,
-            double fio, double kwhMes, int potencia) {
-        super(nome, cor, marca, modelo, disjuntor, tensao, preco, fio, kwhMes);
+            double fio, int potencia) {
+        super(nome, cor, marca, modelo, disjuntor, tensao, preco, fio);
         this.potencia = potencia;
     }
     
@@ -22,7 +22,7 @@ public class Chuveiro extends Eletros implements IEletros{
         System.out.println("Nome: "+ getNome() + ", cor: " + getCor() + ", marca: " 
                             + getMarca() +"\n"+ "modelo: " + getModelo() + ", Disjuntor " + getDisjuntor()
                             + ", tensao: " +getTensao() +"\n"+  "preco: " + getPreco() +  ", fio " + getFio() 
-                            + ", gasto por mes " + getKwhMes() + ", potencia: " + getPotencia());
+                            + ", potencia: " + getPotencia());
         
     }
 
